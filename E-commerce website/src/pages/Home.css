@@ -1,0 +1,14 @@
+
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+} 

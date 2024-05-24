@@ -1,0 +1,89 @@
+/* Product.css */
+
+.product-card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 10px;
+    width: 280px; /* Increased width */
+    height: 600px; /* Increased height */
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; /* Ensure content does not overflow */
+    position: relative; 
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px #FF3D00;
+}
+
+/* .product-card.selected {
+    border-color: #FF3D00;
+    box-shadow: 0 8px 16px rgba(255, 61, 0, 0.2);
+} */
+
+.product-title p {
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    /* margin: 0 0 0px; */
+}
+
+.product-description p {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #4e4949;
+    margin: 0 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.product-image img {
+    width: 200px;
+    height: 200px; 
+    /* object-fit: cover;  */
+    /* border-radius: 5px; */
+    margin-bottom: 5px;
+}
+
+.product-price p {
+    font-size: 18px; /* Increased font size */
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #FF3D00; /* Changed color */
+    margin: 0 0 5px;
+}
+
+.product-button {
+    background-color: #FF3D00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: background-color 0.3s;
+    position: absolute; /* Position absolutely */
+    bottom: 20px; /* Position at the bottom of the card */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust position */
+}
+
+.product-button:hover {
+    background-color: #c13203;
+}
+
+.product-button p {
+    margin: 0;
+}

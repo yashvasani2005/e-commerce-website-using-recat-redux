@@ -1,0 +1,33 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar-logo {
+    width: 60px;
+    height: 50px;
+}
+
+.navbar-link {
+    font-size: 22px;
+    text-decoration: none;
+
+    color: white;
+    font-weight: 300;
+    margin: 0 20px;
+}
+
+.navbar-cart {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar-link:hover,
+.navbar-cart:hover {
+    color: #ccc;
+}
